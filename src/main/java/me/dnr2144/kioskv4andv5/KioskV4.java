@@ -1,4 +1,4 @@
-package me.dnr2144.kioskv4;
+package me.dnr2144.kioskv4andv5;
 
 import lombok.RequiredArgsConstructor;
 
@@ -37,12 +37,12 @@ public class KioskV4 {
             if (!isValidInput(scanner)) continue; // 메뉴 아이템 번호 숫자인지 체크
 
             menuInput = scanner.nextInt();
-            if (!isWithinRange(menuInput, selectedMenu.getMenuItems().size())) continue; // 지정된 범위 초과 여부 체크
+            if (!isWithinRange(menuInput, selectedMenu.menuItems().size())) continue; // 지정된 범위 초과 여부 체크
 
             // 카테고리로 돌아가기
             if (menuInput == GO_BACK_OPTION) continue;
 
-            System.out.println("선택한 메뉴: " + selectedMenu.getMenuItems().get(menuInput - 1).toString());
+            System.out.println("선택한 메뉴: " + selectedMenu.menuItems().get(menuInput - 1).toString());
             System.out.println("-------------------------------");
         }
     }
@@ -51,7 +51,7 @@ public class KioskV4 {
         System.out.println("[ MAIN MENU ]");
         System.out.println("0. 종료");
         for (int i = 0; i < menuCategories.size(); i++) {
-            System.out.printf("%d. %s\n", (i + 1), menuCategories.get(i).getCategory());
+            System.out.printf("%d. %s\n", (i + 1), menuCategories.get(i).category());
         };
     }
 

@@ -1,12 +1,14 @@
 package me.dnr2144.kioskv2;
 
-import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
-@AllArgsConstructor
+@Getter
+@RequiredArgsConstructor
 public class MenuItem {
-    private String name;
-    private double price;
-    private String customRecipes;
+    private final String name;
+    private final double price;
+    private final String customRecipes;
 
     @Override
     public String toString() {

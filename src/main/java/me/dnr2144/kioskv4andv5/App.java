@@ -1,4 +1,4 @@
-package me.dnr2144.kioskv4;
+package me.dnr2144.kioskv4andv5;
 
 import me.dnr2144.kioskv2.MenuItem;
 
