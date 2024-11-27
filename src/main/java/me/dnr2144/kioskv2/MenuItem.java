@@ -8,10 +8,10 @@ import lombok.RequiredArgsConstructor;
 public class MenuItem {
     private final String name;
     private final double price;
-    private final String customRecipes;
+    private final String menuInfo;
 
     @Override
     public String toString() {
-        return String.format("%-15s | W %-4.1f | %s", name, price, customRecipes);
+        return String.format("%-15s | W %-4.1f | %s", name, price, menuInfo);
     }
 }
