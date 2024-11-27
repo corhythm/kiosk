@@ -28,7 +28,7 @@ public class KioskV1 {
             }
 
             input = scanner.nextInt();
-            if (input >= menuItems.length || input < 0) {
+            if (input > menuItems.length || input < 0) {
                 System.out.println("잘못된 입력입니다. 다시 입력해주세요.\n---------------------------------------------------------------------------");
                 continue;
             }
