@@ -1,12 +1,12 @@
-package me.dnr2144.kisoskv3;
+package me.dnr2144.kioskv3;
 
 import me.dnr2144.kioskv2.MenuItem;
 
 import java.util.List;
 import java.util.Scanner;
 
-import static me.dnr2144.kisoskv3.Constants.EXIT_OPTION;
-import static me.dnr2144.kisoskv3.Constants.INVALID_INPUT_MESSAGE;
+import static me.dnr2144.util.Constants.EXIT_OPTION;
+import static me.dnr2144.util.Constants.INVALID_INPUT_MESSAGE;
 
 public class KioskV3 {
 
@@ -45,4 +45,4 @@ public class KioskV3 {
             System.out.printf("%d. %s\n", (i + 1), menuItems.get(i));
         }
     }
-    }
+}
