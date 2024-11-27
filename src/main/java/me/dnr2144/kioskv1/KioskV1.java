@@ -13,7 +13,7 @@ public class KioskV1 {
         menuItems[2] = "3. Cheeseburger  | W 6.9 | 포테이토 번과 비프패티, 치즈가 토핑된 치즈버거";
         menuItems[3] = "4. Hamburger     | W 5.4 | 비프패티를 기반으로 야채가 들어간 기본버거";
 
-        while (input != 0) {
+        while (input != EXIT_OPTION) {
             System.out.println("[ SHAKESHACK MENU ]");
             System.out.println("0. 종료");
             System.out.println(menuItems[0]);
