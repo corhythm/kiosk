@@ -1,10 +1,11 @@
-package me.dnr2144.kioskv4andv5;
+package me.dnr2144.kioskv5;
 
-import me.dnr2144.kioskv2.MenuItem;
+import me.dnr2144.menu.Menu;
+import me.dnr2144.menu.MenuItem;
 
 import java.util.List;
 
-public class App {
+public class AppV5 {
     public static void main(String[] args) {
 
         List<MenuItem> burgers = List.of(
@@ -37,7 +38,7 @@ public class App {
         );
 
 
-        KioskV4 kioskV4 = new KioskV4(menus);
-        kioskV4.start();
+        KioskV5 kioskV5 = new KioskV5(menus);
+        kioskV5.start();
     }
 }

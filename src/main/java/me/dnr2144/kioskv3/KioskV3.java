@@ -1,6 +1,6 @@
 package me.dnr2144.kioskv3;
 
-import me.dnr2144.kioskv2.MenuItem;
+import me.dnr2144.menu.MenuItem;
 
 import java.util.List;
 import java.util.Scanner;

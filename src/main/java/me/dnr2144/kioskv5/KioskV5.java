@@ -1,6 +1,7 @@
-package me.dnr2144.kioskv4andv5;
+package me.dnr2144.kioskv5;
 
 import lombok.RequiredArgsConstructor;
+import me.dnr2144.menu.Menu;
 
 import java.util.List;
 import java.util.Scanner;
@@ -8,7 +9,7 @@ import java.util.Scanner;
 import static me.dnr2144.util.Constants.*;
 
 @RequiredArgsConstructor
-public class KioskV4 {
+public class KioskV5 {
 
     private final List<Menu> menuCategories;
 

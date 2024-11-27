@@ -1,6 +1,4 @@
-package me.dnr2144.kioskv4andv5;
-
-import me.dnr2144.kioskv2.MenuItem;
+package me.dnr2144.menu;
 
 import java.util.List;
 

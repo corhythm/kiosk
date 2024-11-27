@@ -1,10 +1,10 @@
 package me.dnr2144.kioskv3;
 
-import me.dnr2144.kioskv2.MenuItem;
+import me.dnr2144.menu.MenuItem;
 
 import java.util.List;
 
-public class App {
+public class AppV3 {
     public static void main(String[] args) {
         KioskV3 kioskV3 = new KioskV3(List.of(
                 new MenuItem("ShackBurger", 6.9, "토마토, 양상추, 쉑소스가 토핑된 치즈버거"),
