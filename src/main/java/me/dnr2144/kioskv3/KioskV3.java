@@ -5,8 +5,8 @@ import me.dnr2144.menu.MenuItem;
 import java.util.List;
 import java.util.Scanner;
 
-import static me.dnr2144.util.Constants.EXIT_OPTION;
-import static me.dnr2144.util.Constants.INVALID_INPUT_MESSAGE;
+import static me.dnr2144.util.KioskConstants.EXIT_OPTION;
+import static me.dnr2144.util.ErrorMessage.INVALID_INPUT_MESSAGE;
 
 public class KioskV3 {
 
@@ -38,7 +38,7 @@ public class KioskV3 {
         }
     }
 
-    public void displayMenu() {
+    public void displayMenu() { // 메뉴 출력
         System.out.println("[ SHAKESHACK MENU ]");
         System.out.println("0. 종료");
         for (int i = 0; i < menuItems.size(); i++) {

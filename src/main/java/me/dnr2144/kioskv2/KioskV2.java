@@ -21,8 +21,8 @@ public class KioskV2 {
         Scanner scanner = new Scanner(System.in);
         int input = -1;
         while (input != EXIT_OPTION) {
-            displayMenu(menuItems);
-            if (!scanner.hasNextInt()) {
+            displayMenu(menuItems); // 메뉴 출력
+            if (!scanner.hasNextInt()) { // 올바른 값 체크
                 System.out.println(INVALID_INPUT_MESSAGE);
                 scanner.nextLine();
                 continue;

@@ -6,7 +6,9 @@ import me.dnr2144.menu.Menu;
 import java.util.List;
 import java.util.Scanner;
 
-import static me.dnr2144.util.Constants.*;
+import static me.dnr2144.util.KioskConstants.EXIT_OPTION;
+import static me.dnr2144.util.KioskConstants.GO_BACK_OPTION;
+import static me.dnr2144.util.ErrorMessage.INVALID_INPUT_MESSAGE;
 
 @RequiredArgsConstructor
 public class KioskV5 {
@@ -20,7 +22,7 @@ public class KioskV5 {
 
         while (true) {
             // 카테고리 먼저 선택
-            displayCategories();
+            displayMainMenu();
             if (!isValidInput(scanner)) continue; // 카테고리 번호 숫자인지 체크
 
             categoryInput = scanner.nextInt();
@@ -48,7 +50,7 @@ public class KioskV5 {
         }
     }
 
-    private void displayCategories() {
+    private void displayMainMenu() {
         System.out.println("[ MAIN MENU ]");
         System.out.println("0. 종료");
         for (int i = 0; i < menuCategories.size(); i++) {
